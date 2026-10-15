@@ -2,7 +2,7 @@
 <html lang="zh-CN" data-theme="ink-classic">
 <head>
   <meta charset="utf-8">
-  <title>【人物名】· 【封面标题，2行以内，不带句号】· Social Card Set</title>
+  <title>【人物名】·【两行方法论标题】· 审美创意局</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,32 +23,32 @@
     body{ background:#1a1a1a; font-family:var(--sans-zh); color:var(--ink); -webkit-font-smoothing:antialiased; padding:64px 32px; }
     .sheet{ display:flex; flex-direction:column; align-items:center; gap:48px; }
     .poster{ position:relative; background:var(--paper); color:var(--ink); overflow:hidden; isolation:isolate; }
-    .poster.xhs{ width:1080px; height:1440px; }
+    .poster.xhs{ width:1200px; height:1600px; }
     .poster figure{ margin:0; }
     .poster.xhs .content{ padding:70px 84px; }
     .content{ position:relative; width:100%; height:100%; z-index:2; display:flex; flex-direction:column; }
     .grain{ position:absolute; inset:0; z-index:1; pointer-events:none; opacity:.35; mix-blend-mode:multiply; background-image:radial-gradient(rgba(0,0,0,.045) 1px,transparent 1px); background-size:3px 3px; }
     .paper-wash{ position:absolute; inset:0; z-index:1; pointer-events:none; background:linear-gradient(180deg,rgba(var(--ink-rgb),.02),rgba(var(--ink-rgb),.05) 60%,rgba(var(--ink-rgb),.08)); }
-    /* 字号下限见 reference/typography-rules.md：body>=42 lead>=44 ledger-title>=46 ledger-note>=38 img-cap>=28 pullquote>=56 */
-    .kicker{ font-family:var(--mono); font-size:32px; letter-spacing:.22em; text-transform:uppercase; color:rgba(var(--ink-rgb),.55); margin:0 0 18px; }
-    .h-display{ font-family:var(--serif-zh); font-weight:500; font-size:108px; line-height:1.18; letter-spacing:.02em; margin:0 0 24px; }
-    .h-xl{ font-family:var(--serif-zh); font-weight:500; font-size:86px; line-height:1.14; letter-spacing:.02em; margin:0; }
-    .h-md{ font-family:var(--serif-zh); font-weight:500; font-size:64px; line-height:1.2; margin:0; }
-    .lead{ font-family:var(--serif-zh); font-weight:400; font-size:46px; line-height:1.6; color:rgba(var(--ink-rgb),.82); margin:0; }
-    .body{ font-family:var(--serif-zh); font-weight:400; font-size:44px; line-height:1.6; color:rgba(var(--ink-rgb),.80); margin:0; }
-    .meta{ font-family:var(--mono); font-size:30px; letter-spacing:.20em; text-transform:uppercase; color:rgba(var(--ink-rgb),.55); }
-    .pullquote{ font-family:var(--serif-zh); font-style:normal; font-weight:500; font-size:64px; line-height:1.3; color:var(--ink); margin:0; }
-    .issue-row{ display:flex; align-items:center; gap:16px; font-family:var(--mono); font-size:28px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); }
+    /* 正式画布1200x1600；内页标题52–68px，正文30–38px；参照reference/typography-rules.md */
+    .kicker{ font-family:var(--mono); font-size:25px; letter-spacing:.22em; text-transform:uppercase; color:rgba(var(--ink-rgb),.55); margin:0 0 18px; }
+    .h-display{ font-family:var(--serif-zh); font-weight:500; font-size:94px; line-height:1.2; letter-spacing:.02em; margin:0 0 24px; }
+    .h-xl{ font-family:var(--serif-zh); font-weight:500; font-size:60px; line-height:1.22; letter-spacing:.02em; margin:0; }
+    .h-md{ font-family:var(--serif-zh); font-weight:500; font-size:34px; line-height:1.2; margin:0; }
+    .lead{ font-family:var(--serif-zh); font-weight:400; font-size:34px; line-height:1.6; color:rgba(var(--ink-rgb),.82); margin:0; }
+    .body{ font-family:var(--serif-zh); font-weight:400; font-size:34px; line-height:1.6; color:rgba(var(--ink-rgb),.80); margin:0; }
+    .meta{ font-family:var(--mono); font-size:25px; letter-spacing:.20em; text-transform:uppercase; color:rgba(var(--ink-rgb),.55); }
+    .pullquote{ font-family:var(--serif-zh); font-style:normal; font-weight:500; font-size:34px; line-height:1.3; color:var(--ink); margin:0; }
+    .issue-row{ display:flex; align-items:center; gap:16px; font-family:var(--mono); font-size:24px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); }
     .issue-row .dot{ width:6px; height:6px; border-radius:50%; background:var(--accent); }
-    .issue-strip{ display:flex; justify-content:space-between; align-items:center; gap:32px; font-family:var(--mono); font-size:30px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); border-top:1px solid var(--line); padding-top:18px; }
+    .issue-strip{ display:flex; justify-content:space-between; align-items:center; gap:32px; font-family:var(--mono); font-size:25px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); border-top:1px solid var(--line); padding-top:18px; }
     .rule-accent{ height:2px; background:var(--accent); border:0; margin:0; width:96px; }
-    .callout{ border-left:3px solid var(--accent); padding:18px 28px; font-family:var(--serif-zh); font-size:44px; line-height:1.4; color:var(--ink); background:var(--paper-2); }
-    .callout .callout-src{ display:block; margin-top:16px; font-family:var(--mono); font-size:30px; letter-spacing:.12em; color:var(--muted); }
+    .callout{ border-left:3px solid var(--accent); padding:18px 28px; font-family:var(--serif-zh); font-size:34px; line-height:1.4; color:var(--ink); background:var(--paper-2); }
+    .callout .callout-src{ display:block; margin-top:16px; font-family:var(--mono); font-size:25px; letter-spacing:.12em; color:var(--muted); }
     .ledger{ display:flex; flex-direction:column; }
     .ledger-row{ display:grid; grid-template-columns:170px 1fr auto; gap:24px; align-items:baseline; padding:22px 0; border-bottom:1px solid var(--line); }
-    .ledger-row .ledger-nb{ font-family:var(--mono); font-size:32px; color:var(--accent); }
-    .ledger-row .ledger-title{ font-family:var(--serif-zh); font-weight:500; font-size:46px; color:var(--ink); }
-    .ledger-row .ledger-note{ font-family:var(--serif-zh); font-weight:400; font-size:38px; line-height:1.48; color:rgba(var(--ink-rgb),.72); }
+    .ledger-row .ledger-nb{ font-family:var(--mono); font-size:25px; color:var(--accent); }
+    .ledger-row .ledger-title{ font-family:var(--serif-zh); font-weight:500; font-size:34px; color:var(--ink); }
+    .ledger-row .ledger-note{ font-family:var(--serif-zh); font-weight:400; font-size:25px; line-height:1.48; color:rgba(var(--ink-rgb),.72); }
     .center-stack{ flex:1 1 auto; min-height:0; display:flex; flex-direction:column; justify-content:center; gap:32px; }
     .center-stack > *{ margin:0; }
     .hgroup{ display:flex; flex-direction:column; gap:16px; }
@@ -64,9 +64,9 @@
     .byline-portrait img{ width:100%; height:100%; object-fit:cover; object-position:center 15%; }
     .byline-text{ display:flex; flex-direction:column; justify-content:center; gap:14px; }
     .byline-name{ font-family:var(--serif-zh); font-weight:700; font-size:54px; line-height:1.14; margin:0; white-space:nowrap; }
-    .byline-text .meta{ display:block; margin:0 0 4px; font-size:30px; }
-    .byline-note{ margin:0; font-size:38px; line-height:1.55; }
-    .en-original{ font-family:var(--serif-en); font-style:italic; font-size:42px; color:var(--muted); line-height:1.4; margin:0; }
+    .byline-text .meta{ display:block; margin:0 0 4px; font-size:25px; }
+    .byline-note{ margin:0; font-size:25px; line-height:1.55; }
+    .en-original{ font-family:var(--serif-en); font-style:italic; font-size:34px; color:var(--muted); line-height:1.4; margin:0; }
     .work-fig{ margin:0; width:100%; }
     .work-fig img{ width:100%; height:auto; display:block; box-shadow:0 0 0 1px var(--line); }
     .work-fig .img-cap{ font-family:var(--mono); font-size:29px; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); margin-top:14px; }
@@ -76,7 +76,7 @@
 <body>
   <main class="sheet">
 
-    <!-- P1 封面：issue-row(短标签,一行内) -> hgroup(kicker+h-display,2行封顶不带句号) -> rule -> cover-byline(人像+简介) -> issue-strip -->
+    <!-- P1 封面：issue-row(短标签,一行内) -> hgroup(kicker+h-display,2行封顶句号按语义决定) -> rule -> cover-byline(人像+简介) -> issue-strip -->
     <section class="poster xhs" id="xhs-01">
       <div class="grain"></div>
       <div class="content has-foot">
@@ -106,7 +106,7 @@
       <div class="content">
         <div class="center-stack" style="gap:36px">
           <div class="hgroup"><p class="kicker">起点 01 · 【英文小标题】</p><h2 class="h-xl">【短语式小标题<br>2行】</h2></div>
-          <p class="lead" style="font-size:44px">【生平/背景介绍段落，事实核查过的内容】</p>
+          <p class="lead" style="font-size:34px">【生平/背景介绍段落，事实核查过的内容】</p>
         </div>
       </div>
     </section>
@@ -137,7 +137,7 @@
             <img src="assets/img/page4.jpg" alt="【图片描述】" style="object-fit:cover; aspect-ratio:16/10;">
             <figcaption class="img-cap">【图片来源/说明】</figcaption>
           </figure>
-          <p class="lead" style="font-size:38px">【解读文字，跟图片内容对应，数字类截图要按图上实际数字写】</p>
+          <p class="lead" style="font-size:25px">【解读文字，跟图片内容对应，数字类截图要按图上实际数字写】</p>
         </div>
       </div>
     </section>
@@ -148,8 +148,8 @@
       <div class="content">
         <div class="center-stack" style="gap:40px">
           <p class="kicker">理念 04 · 【英文小标题】</p>
-          <p class="pullquote" style="font-size:64px">【真实查证过的金句<br>用<span style="color:var(--accent)">强调色</span>点题】</p>
-          <p class="lead" style="font-size:44px">【背景说明】</p>
+          <p class="pullquote" style="font-size:34px">【真实查证过的金句<br>用<span style="color:var(--accent)">强调色</span>点题】</p>
+          <p class="lead" style="font-size:34px">【背景说明】</p>
           <div class="source-line"><span class="dot"></span><span class="meta">【人物名】· 【采访媒体, 年份】</span></div>
         </div>
       </div>
@@ -166,7 +166,7 @@
               <figure class="work-fig" style="margin:0;">
                 <img src="assets/img/page6.jpg" alt="【图片描述】" style="object-fit:cover; aspect-ratio:3/4;">
               </figure>
-              <p class="body" style="font-size:32px; line-height:1.5; margin-top:18px; color:rgba(var(--ink-rgb),.75);">【图片翻译/说明】</p>
+              <p class="body" style="font-size:25px; line-height:1.5; margin-top:18px; color:rgba(var(--ink-rgb),.75);">【图片翻译/说明】</p>
             </div>
             <p class="lead" style="font-size:40px">【正文】</p>
           </div>
@@ -180,11 +180,11 @@
       <div class="content foot-only">
         <div class="center-stack" style="gap:38px">
           <p class="kicker">尾声 · 【英文小标题】</p>
-          <p class="pullquote" style="font-size:64px">【收尾判断句/金句】</p>
-          <p class="lead" style="font-size:44px">【收尾段落，呼应封面】</p>
+          <p class="pullquote" style="font-size:34px">【收尾判断句/金句】</p>
+          <p class="lead" style="font-size:34px">【收尾段落，呼应封面】</p>
         </div>
         <div style="display:flex; flex-direction:column; gap:14px;">
-          <p class="meta" style="text-align:center; font-size:28px;">审美情报局 · 用设计的眼睛，看懂世界的美</p>
+          <p class="meta" style="text-align:center; font-size:24px;">审美情报局 · 用设计的眼睛，看懂世界的美</p>
           <div class="issue-strip"><span>【NAME】</span><span>【关键词】</span><span>END · 07</span></div>
         </div>
       </div>
